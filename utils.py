@@ -20,7 +20,7 @@ class DButils:
         return conn
     @classmethod
     def close(cls,cursor=None,conn=None):
-        if cursor:
+        if cursor: #游标
             cursor.close()
         if conn:
             conn.close()

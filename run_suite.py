@@ -3,7 +3,7 @@ import app
 import time
 from lib.HTMLTestRunner import HTMLTestRunner
 
-from script.login import login
+from testcase.login import login
 
 suite=unittest.TestSuite()
 suite.addTest(unittest.makeSuite(login))

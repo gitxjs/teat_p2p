@@ -63,7 +63,7 @@ Version in 0.8.1
 * Added description of test classes and test cases.
 Version in 0.8.0
 * Define Template_mixin class for customization.
-* Workaround a IE 6 bug that it does not treat <script> block as CDATA.
+* Workaround a IE 6 bug that it does not treat <testcase> block as CDATA.
 Version in 0.7.1
 * Back port to Python 2.3 (Frank Horowitz).
 * Fix missing scroll bars in detail log (Podi).
@@ -173,7 +173,7 @@ class Template_mixin(object):
     %(stylesheet)s
 </head>
 <body>
-<script language="javascript" type="text/javascript"><!--
+<testcase language="javascript" type="text/javascript"><!--
 output_list = Array();
 /* level - 0:Summary; 1:Failed; 2:All */
 function showCase(level) {
@@ -258,7 +258,7 @@ function showOutput(id, name) {
     d.close();
 }
 */
---></script>
+--></testcase>
 %(heading)s
 %(report)s
 %(ending)s
@@ -432,7 +432,7 @@ a.popup_link:hover {
            [x]</a>
         </div>
         <pre>
-        %(script)s
+        %(testcase)s
         </pre>
     </div>
     <!--css div popup end-->
